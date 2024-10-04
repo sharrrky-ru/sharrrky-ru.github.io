@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="modal">
+      <form id="form">
+        <div id="cross" onclick="close_modal()">&#10006;</div>
+        <label for="firstname">
+          Имя
+          <input type="text" name="firstname" id="firstname" />
+        </label>
+        <label for="lastname">
+          Фамилия <input type="text" name="lastname" id="lastname" />
+        </label>
+        <label for="tel">
+          Телефон<input type="tel" name="tel" id="tel" />
+        </label>
+        <label for="email"
+          >E-mail
+          <input type="email" name="email" id="email" />
+        </label>
+        <button type="submit" class="primary-button">Записаться на курс</button>
+      </form>
+    </div>
+    <section id="first-section">
+      <header class="header">
+        <img src="./imges/logo.svg" alt="тут должен быть логотип" />
+        <nav class="menu header__menu">
+          <ul>
+            <li><a class="menu__link">О школе</a></li>
+            <li><a class="menu__link">Тренеры</a></li>
+            <li><a class="menu__link">Стоимость</a></li>
+          </ul>
+        </nav>
+        <a class="header__tel" href="tel:+78000001122">+7 800 000 11 22</a>
+      </header>
+      <div class="wrapper first-section__bottom">
+        <div class="info">
+          <h1 class="info__header">Robo school</h1>
+          <p class="info__text">
+            Курсы повышения квалификации по робототехнике для педагогов
+            начальной школы
+          </p>
+          <button class="info__button" onclick="open_modal()">
+            Записаться на курс
+          </button>
+        </div>
+        <img src="./imges/devuskaicrug.png" alt="девушка и круг" />
+      </div>
+    </section>
+    <section id="second-section">
+      <div class="wrapper">
+        <p>
+          <strong>Robo School</strong> – учреждение для формирования кадрового
+          педагогического резерва в сфере робототехники программирования
+        </p>
+        <div class="stats">
+          <div class="stat-card">
+            <h2>10</h2>
+            <p>УМК по различным направлениям по робототехнике</p>
+          </div>
+          <div class="stat-card">
+            <h2>20</h2>
+            <p>Школ, в которых запущена робототехника</p>
+          </div>
+          <div class="stat-card">
+            <h2>100</h2>
+            <p>Педагогов прошедших курсы повышения квалификации</p>
+          </div>
+          <div class="stat-card">
+            <h2>10&nbsp;000</h2>
+            <p>Обученных детей на базе собственных центров</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="third-section">
+      <div class="wrapper">
+        <h2>Что вы получите после курса</h2>
+        <div class="stats">
+          <div class="stats__info">
+            <h3>Удостоверение</h3>
+            <p>
+              Дающее право преподавать робототехнику для детей 6-12 лет в
+              образовательных учреждениях
+            </p>
+          </div>
+          <div class="stats__info">
+            <h3>Знания</h3>
+            <p>
+              По основам разработки учебно-методических комплексов по
+              робототехнике и программированию
+            </p>
+          </div>
+          <div class="stats__info">
+            <div class="mouse-enter">
+              <h3 id="psevdoi">Практику</h3>
+              <div class="mouse-enter__text">При наличии свободных мест</div>
+            </div>
+            <p>
+              Возможность пройти практику по преподаванию робототехники на базе
+              R:ED LAB (в оффлайн или онлайн формате)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fourth-section">
+      <div class="wrapper">
+        <h2>Профессиональные тренеры</h2>
+        <div class="teachers">
+          <div class="teachers-card">
+            <img src="./imges/irinalaim.png" alt="" />
+            <p>Ирина лайм</p>
+            <p class="specialization">преподователь по робототехнике</p>
+            <a href="">Подробнее</a>
+          </div>
+          <div class="teachers-card">
+            <img src="./imges/marinaorlova.png" alt="" />
+            <p>Марина Орлова</p>
+            <p class="specialization">преподователь по робототехнике</p>
+            <a href="">Подробнее</a>
+          </div>
+          <div class="teachers-card">
+            <img src="./imges/maximpetrov.png" alt="" />
+            <p>Максим Петров</p>
+            <p class="specialization">преподователь по робототехнике</p>
+            <a href="">Подробнее</a>
+          </div>
+          <div class="teachers-card">
+            <img src="./imges/constatinnazarov.png" alt="" />
+            <p>Константин Назаров</p>
+            <p class="specialization">преподователь по программированию</p>
+            <a href="">Подробнее</a>
+          </div>
+          <div class="teachers-card">
+            <img src="./imges/lizavessenya.png" alt="" />
+            <p>Лиза Весенняя</p>
+            <p class="specialization">преподователь по программированию</p>
+            <a href="">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fifth-section">
+      <div class="wrapper">
+        <h2>Выберите нужный пакет</h2>
+        <div class="packets">
+          <div class="packet">
+            <h3 class="packet__name">pro</h3>
+            <div>
+              <p class="packet__price">20.000 ₽</p>
+              <p class="packet__about">
+                УМК по робототетхнике и программированию
+              </p>
+            </div>
+            <button class="primary-button" onclick="open_modal()">Оставить заявку</button>
+          </div>
+          <div class="packet">
+            <h3 class="packet__name">robo</h3>
+            <div>
+              <p class="packet__price">15.000 ₽</p>
+              <p class="packet__about">УМК по робототетхнике</p>
+            </div>
+            <button class="primary-button" onclick="open_modal()">Оставить заявку</button>
+          </div>
+          <div class="packet">
+            <h3 class="packet__name">prog</h3>
+            <div>
+              <p class="packet__price">10.000 ₽</p>
+              <p class="packet__about">УМК по программированию</p>
+            </div>
+            <button class="primary-button" onclick="open_modal()">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sixth-section">
+      <div class="sell-block">
+        <div class="sell-block-wrapper">
+          <div class="sell-block-content">
+            <div class="sell-block-left">
+              <h2 class="sell-block__h2">Запишитесь на курс </br> со скидкой 10%</h2>
+              <p class="sell-block__p">
+                Акция действительна до 10 марта 2022 года
+              </p>
+            </div>
+            <div class="sell-block-right">
+              <form id="second-form">
+                <label for="firstname" class="sale-input">
+                  <input type="text" name="firstname"  />
+                </label>
+                <label for="tel" class="sale-input">
+                <input type="tel" name="tel" id="sale-tel" />
+                </label>
+                <label for="email" class="sale-input">
+                  <input type="email" name="email" id="email" class="sale-email" />
+                </label>
+                <button id="button-sale-input" onclick="open_modal()">Оформить заявку</button>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+    <h2 class="footer__h2">robo.school</h2>
+    <span id="span-helper-p-footer"><p class="footer__p">© ROBO.SCHOOL</p></span>
+    <a class="header__tel" href="tel:+78000001122">+7 800 000 11 22</a>
+    </footer> 
+    <script src="./app.js"></script>
+  </body>
+</html>
