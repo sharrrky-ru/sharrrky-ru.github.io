@@ -1,9 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "Jost", sans-serif;
   color: #141024;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -280,6 +284,8 @@ body::-webkit-scrollbar {
   border-radius: 20px;
   border: 1px solid #14102433;
   transition: transform 0.5s, background-color 0.5s, color 0.5s;
+  cursor: default;
+  user-select: none;
 }
 
 .packet:hover {
@@ -322,61 +328,63 @@ body::-webkit-scrollbar {
 }
 #sixth-section {
   margin-top: 120px;
+  background-color: #D52027;
+  gap: 64px;
+  background-image: url("imges/percent.png") ;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
 }
-.sell-block {
-  background-color: #d52027;
-}
-
-.sell-block-content {
+#sell-block {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 144px;
+  padding-top: 87px;
 }
-.sale-input {
-  width: 500px;
+.left-sell-block {
+  gap: 20px;
+}
+.right-sell-block {
+  margin-bottom: 87px;
+}
+.left-sell-block__h2 {
+  display: block;
+  font-size: 32px;
+  color: #fff;
+}
+.left-sell-block-h2__item {
+  display: block;  
+}
+.left-sell-block__p {
+  font-size: 20px;
+  color: #fff;
+}
+.input-sell-block {
+  width: 480px;
   height: 64px;
   border-radius: 5px;
+  padding-left: 20px;
+  border: 0;
 }
- .sell-block-left {
-  text-align: center;
-}
-.sell-block__h2 {
-  color: #fff;
-  font-size: 36px;
-  margin-top: 86px;
-}
-.sell-block__p {
-  color: #fff;
-  font-size: 20px;
-}
-.sell-block-right {
-  margin-left: 144px;
-}
-.footer {
-  background-color: #141024;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer__h2 {
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #fff;
-  margin-left: 100px;
-  margin-bottom: 71px;
-}
-.footer__p {
-  color: #fff;
+.button-input-sell-block {
+  width: 500px;
+  height: 64px;
   font-size: 16px;
+  background-color: #141024;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 0;
 }
-#span-helper-p-footer {
-  po
-}
-#second-form {
+#form-sell-block {
   display: flex;
   flex-direction: column;
-  gap:10px;
-  width: 500px;
-  height: 286px;
+  gap: 20px;
 }
+
+
+
+
+
 @media (max-width: 1050px) {
   .wrapper {
     width: 100%;

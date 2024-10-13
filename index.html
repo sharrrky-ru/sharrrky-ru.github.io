@@ -188,39 +188,31 @@
       </div>
     </section>
     <section id="sixth-section">
-      <div class="sell-block">
-        <div class="sell-block-wrapper">
-          <div class="sell-block-content">
-            <div class="sell-block-left">
-              <h2 class="sell-block__h2">Запишитесь на курс </br> со скидкой 10%</h2>
-              <p class="sell-block__p">
-                Акция действительна до 10 марта 2022 года
-              </p>
-            </div>
-            <div class="sell-block-right">
-              <form id="second-form">
-                <label for="firstname" class="sale-input">
-                  <input type="text" name="firstname"  />
-                </label>
-                <label for="tel" class="sale-input">
-                <input type="tel" name="tel" id="sale-tel" />
-                </label>
-                <label for="email" class="sale-input">
-                  <input type="email" name="email" id="email" class="sale-email" />
-                </label>
-                <button id="button-sale-input">Оформить заявку</button>
-              </form>
-            </div>
-            </div>
-          </div>
-        </div>
+      <div class="wrapper">
+        <div id="sell-block">
+      <div class="left-sell-block">
+        <h2 class="left-sell-block__h2">
+          <span class="left-sell-block-h2__item">Запишитесь на курс</span>
+          <span class="left-sell-block-h2__item">со скидкой 10%</span>
+        </h2>
+        <p class="left-sell-block__p">Акция действительна до 10 марта 2022 года</p>
+      </div>
+      <div class="right-sell-block">
+          <form id="form-sell-block">
+            <input type="text" name="firstname" class="input-sell-block" placeholder="Имя"/>
+            <input type="text" name="lastname" class="input-sell-block" placeholder="Фамилия"/>
+            <input type="email" name="email" class="input-sell-block" placeholder="E-mail"/>
+          <button type="submit" class="button-input-sell-block" >Оформить заявку</button>
+        </form>
+      </div>
+      </div>
       </div>
     </section>
-    <footer class="footer">
-    <h2 class="footer__h2">robo.school</h2>
-    <span id="span-helper-p-footer"><p class="footer__p">© ROBO.SCHOOL</p></span>
-    <a class="header__tel" href="tel:+78000001122">+78000001122</a>
-    </footer> 
+    <footer>
+      <div class="wrapper">
+
+      </div>
+    </footer>
     <script src="./app.js"></script>
   </body>
 </html>
