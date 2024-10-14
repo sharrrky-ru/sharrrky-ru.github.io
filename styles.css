@@ -102,10 +102,6 @@ body::-webkit-scrollbar {
   font-size: 30px;
   padding-right: 100px;
 }
-.header__tel:hover {
-  cursor: pointer;
-  color: aqua;
-}
 .menu ul {
   display: flex;
   gap: 40px;
@@ -380,10 +376,23 @@ body::-webkit-scrollbar {
   flex-direction: column;
   gap: 20px;
 }
-
-
-
-
+#footer {
+  background-color: #141024;
+  padding: 40px 100px 40px;
+} 
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__h2 {
+  color: #fff;
+}
+.footer__p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 5px;
+  line-height: 20px;
+}
 
 @media (max-width: 1050px) {
   .wrapper {
@@ -452,6 +461,14 @@ body::-webkit-scrollbar {
   }
   #third-section h2 {
     text-align: center;
+  }
+  #sixth-section {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 500px) {

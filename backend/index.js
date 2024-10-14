@@ -17,7 +17,7 @@ const server = createServer((request, response) => {
     }
 
     let content = "Имя: "+query.firstname+"\nФамилия: "+query.lastname+"\nТелефон: "+query.tel+"\nE-mail: "+query.email+"\n";
-
+    console.log(content);
     fs.writeFile('./users-database.txt', content, err => {
         if (err) {
             response.end("Произша ошибка. Проверьте логи.");
